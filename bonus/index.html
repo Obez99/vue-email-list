@@ -14,7 +14,7 @@
 <body>
   <div id="app">
     <h1>Email List</h1>
-    <ul style="list-style-type:none; padding-inline-start:0">
+    <ul style="list-style-type:none; padding-inline-start:0" v-if="pendingEmails === 0">
       <li v-for="email in emails" style="font-size: 30px;">{{email}}</li>
     </ul>
   </div>
